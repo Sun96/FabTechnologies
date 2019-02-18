@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/heder"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="30dp">
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:fontFamily="@font/my_custom_font"
+            android:text="Product"/>
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/a3"
+            android:layout_toEndOf="@+id/a1"
+            android:gravity="center"
+            android:text="Vendor"
+            android:fontFamily="@font/my_custom_font"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/a3"
+            android:layout_toRightOf="@+id/a1" />
+
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_toStartOf="@+id/a4"
+            android:gravity="center"
+            android:fontFamily="@font/my_custom_font"
+            android:text="Qty"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/a4" />
+
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/a5"
+            android:gravity="center"
+            android:fontFamily="@font/my_custom_font"
+            android:text="Price"
+            android:textColor="@android:color/black"
+            android:layout_toLeftOf="@+id/a5" />
+
+        <TextView
+            android:id="@+id/a5"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:fontFamily="@font/my_custom_font"
+            android:text="Total"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lvCustomList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="afterDescendants"
+        android:focusableInTouchMode="true"
+        android:headerDividersEnabled="true"
+        android:scrollingCache="true"
+        android:layout_below="@+id/heder"
+        android:layout_above="@id/res"/>
+
+    <RelativeLayout
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:background="#c1c1c1"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/ta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/ta2"
+            android:layout_toLeftOf="@+id/ta2">
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/my_custom_font"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:text="Total: "/>
+
+            <TextView
+                android:id="@+id/tresult"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/t"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="0.00"
+                android:textColor="@android:color/black"
+                android:layout_toRightOf="@+id/t" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ta2"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <Button
+                android:id="@+id/buy"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#f05924"
+                android:textColor="#fbfcfc"
+                android:fontFamily="@font/my_custom_font"
+                android:text="Buy Now"/>
+            <Button
+                android:id="@+id/buy2"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#fbfcfc"
+                android:fontFamily="@font/my_custom_font"
+                android:text="Customize Order"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

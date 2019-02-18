@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:card_view="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_margin=".1dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:fontFamily="@font/my_custom_font"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:layout_below="@+id/textView"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin=".1dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="afterDescendants"
+            android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:headerDividersEnabled="true"
+        android:scrollingCache="true"
+        android:id="@+id/ivIcon">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

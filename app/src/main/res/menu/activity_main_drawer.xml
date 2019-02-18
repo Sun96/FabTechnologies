@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/add"
+            android:title="New Request" />
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/oldreq"
+            android:title="Request Log" />
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/policy"
+            android:title="Policy" />
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_pass"
+            android:icon="@drawable/pass"
+            android:title="Change Password" />
+        <item
+            android:fontFamily="@font/my_custom_font"
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help"
+            android:title="Help Line" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:fontFamily="@font/my_custom_font"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:fontFamily="@font/my_custom_font"
+                android:icon="@drawable/logout"
+                android:title="Log Out" />
+        </menu>
+    </item>
+
+</menu>
